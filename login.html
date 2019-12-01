@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Productos - Iniciar sesión</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+						<span class="sr-only">Desplegar / Ocultar Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Productos</a>
+				</div>
+				<!-- Inicia Menu -->
+				<div class="collapse navbar-collapse" id="navegacion-fm">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="cart.html">Carrito</a></li>
+						<li class="active"><a href="login.html">Iniciar sesión</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="main container">
+		<div class="row">
+			<section class="posts col-md-9">
+			
+				<form id="frm-login">
+					<div class="alert alert-danger" style="display: none;" role="alert">
+					  Error al intentar iniciar sesión.
+					</div>
+				  <div class="form-group">
+					<label for="exampleInputUser">Usuario</label>
+					<input type="text" class="form-control" id="exampleInputLoginUser" placeholder="Ingrese su usuario">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputPassword1">Contraseña</label>
+					<input type="password" class="form-control" id="exampleInputLoginPassword" placeholder="Ingrese su contraseña">
+				  </div>
+				  
+				  <button type="button" class="btn btn-primary login">Iniciar sesión</button>
+				  <a href="#" id="user-register">Registrarse</a>
+				</form>
+				
+				<form style="display:none;" id="frm-register">
+				  <div class="form-group">
+					<label for="exampleInputName">Nombre</label>
+					<input type="text" class="form-control" id="exampleInputName" placeholder="Ingrese su nombre">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputLastName">Apellidos</label>
+					<input type="text" class="form-control" id="exampleInputLastName" placeholder="Ingrese sus apellidos">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputEmail">E-mail</label>
+					<input type="email" class="form-control" id="exampleInputEmail" placeholder="Ingrese su e-mail">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputUser">Usuario</label>
+					<input type="text" class="form-control" id="exampleInputUser" placeholder="Ingrese su usuario">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputPassword1">Contraseña</label>
+					<input type="password" class="form-control" id="exampleInputPassword" placeholder="Ingrese su contraseña">
+				  </div>
+				  
+				  <button type="submit" class="btn btn-primary register">Registrar</button> 
+				  <a href="#" id="user-login">Iniciar sesión</a>
+				</form>
+			</section>
+
+			
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<p>Juan Guillermo Valdes</p>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/request_login.js"></script>
+</body>
+</html>

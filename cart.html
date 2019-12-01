@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Productos - Carrito</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+						<span class="sr-only">Desplegar / Ocultar Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Productos</a>
+				</div>
+				<!-- Inicia Menu -->
+				<div class="collapse navbar-collapse" id="navegacion-fm">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active"><a href="#">Carrito</a></li>
+						<li><a href="login.html">Iniciar sesión</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="main container">
+		<div class="row">
+			<section class="posts col-md-9">
+				<table class="table">
+				  <thead class="thead-dark">
+					<tr>
+					  <th scope="col">#</th>
+					  <th scope="col">Producto</th>
+					  <th scope="col">Cantidad</th>
+					  <th scope="col">Precio</th>
+					  <th scope="col">Eliminar</th>
+					</tr>
+				  </thead>
+				  <tbody class="products-cart">
+					<tr>
+					  <th scope="row"><span class="id-product"></span></th>
+					  <td><span class="name-product"></span></td>
+					  <td><span class="count-product"></span></td>
+					  <td><span class="price-product"></span></td>
+					  <td><button type="button" class="btn btn-danger delete-product" onclick="deleteProductCart(this);">Eliminar</button></td>
+					</tr>
+				  </tbody>
+				</table>
+			</section>
+
+			
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<p>Juan Guillermo Valdes</p>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/request_cart.js"></script>
+</body>
+</html>

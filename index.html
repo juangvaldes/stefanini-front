@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Productos</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+						<span class="sr-only">Desplegar / Ocultar Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Productos</a>
+				</div>
+				<!-- Inicia Menu -->
+				<div class="collapse navbar-collapse" id="navegacion-fm">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Inicio</a></li>
+						<li><a href="cart.html">Carrito</a></li>
+						<li><a href="login.html">Iniciar sesión</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="main container">
+		<div class="row">
+			<section class="posts col-md-9">
+				<article class="post clearfix">
+					<a href="#" class="thumb pull-left">
+						<img class="img-thumbnail" src="" alt="">
+					</a>
+					<h2 class="post-title">
+						
+					</h2>
+					<p><span class="post-fecha">
+					</span></p>
+					<p class="post-contenido text-justify">
+						
+					</p>
+					<p class="post-price text-justify">
+						
+					</p>
+
+					<div class="contenedor-botones">
+						<button type="button" class="btn btn-primary add-cart" onclick="addCart(this);" data-toggle="modal" data-target="#confirm-cart">
+							Agregar al carrito
+						</button>
+					</div>
+				</article>
+			</section>
+
+			
+		</div>
+	</section>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">¿Desea agregar el producto al carrito?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary confirm-cart">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<p>Juan Guillermo Valdes</p>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/request_products.js"></script>
+</body>
+</html>
